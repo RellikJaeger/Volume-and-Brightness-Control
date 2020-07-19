@@ -1,0 +1,37 @@
+
+    LICENSE FOR USE AND DISTRIBUTION
+
+    Volume and Brightness Control v0.3 Copyright © 2020, Rellik Jaeger
+
+    Note:
+        You can use Volume and Brightness Control on any computer, including 
+        a computer in a commercial organization. You don't need to register or 
+        pay for Volume and Brightness Control.
+
+    [!] NOTICE:
+        The main program (or main software of this program)
+        is developed by using AutoHotKey Script and Compiler!
+        I do not own any single code of this program!
+        Credit to the owners of all sources :)
+
+        Learn more about AutoHotKey on official website
+            - https://www.autohotkey.com/
+
+    GNU GPL information
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+  Rellik Jaeger
+

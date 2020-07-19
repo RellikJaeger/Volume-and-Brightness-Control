@@ -1,0 +1,29 @@
+
+    This version of Volume and Brightness Control software has been originally developed at
+    home.
+    It is subject to the GNU GPL license, which is part of this download.
+    For more information please review the other licenses, 
+    which should be available at the same location as where you obtained 
+    this version.
+
+    IMPORTANT: PLEASE READ CAREFULLY BEFORE USING THE VOLUME AND BRIGHTNESS CONTROL SOFTWARE
+
+    This License Agreement for the Volume and Brightness Control software ("License
+    Agreement") is an agreement between Rellik Jaeger and you
+    (either an individual or a legal entity) ("You") with respect to the software
+    product which this License Agreement accompanies (the "Software"). 
+    
+    By installing, copying or otherwise using the Software, You agree to be
+    bound by the terms of this License Agreement.
+    
+    [!] NOTICE:
+        The main program (or main software of this program)
+        is developed by using AutoHotKey Script and Compiler!
+        I do not own any single code of this program!
+        Credit to the owners of all sources :)
+
+        Learn more about AutoHotKey on official website
+            - https://www.autohotkey.com/
+
+
+    Rellik Jaeger

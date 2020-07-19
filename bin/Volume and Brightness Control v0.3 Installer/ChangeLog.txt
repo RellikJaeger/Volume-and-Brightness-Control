@@ -1,0 +1,21 @@
+
+    CHANGELOG FOR VERSION UPDATE
+
+    Volume and Brightness Control v0.3 Copyright © 2020, Rellik Jaeger
+
+    Changes:
+        - Shortcut key changes. (See more details in README.txt)
+        - New brightness functions added. (See more details in README.txt)
+        - Some internal coding logic may differ from previous versions.
+
+    [!] NOTICE:
+        The main program (or main software of this program)
+        is developed by using AutoHotKey Script and Compiler!
+        I do not own any single code of this program!
+        Credit to the owners of all sources :)
+
+        Learn more about AutoHotKey on official website
+            - https://www.autohotkey.com/
+
+
+    Rellik Jaeger
