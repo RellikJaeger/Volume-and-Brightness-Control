@@ -21,26 +21,27 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 @ECHO OFF
-TITLE Volume and Brightness Control v0.3 Installer
+TITLE Volume and Brightness Control v0.4 Installer
 COLOR 0A
 MODE CON COLS=54 LINES=3
 IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
->nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+	>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
 ) ELSE (
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+	>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 )
 
 IF '%ERRORLEVEL%' NEQ '0' (
     ECHO.
     ECHO                     Loading . . .
     GOTO UACPrompt
-) ELSE ( GOTO gotAdmin )
+) ELSE (
+	GOTO gotAdmin
+)
 
 :UACPrompt
     ECHO Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
     SET params= %*
     ECHO UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
-
     "%temp%\getadmin.vbs"
     DEL "%temp%\getadmin.vbs"
     EXIT /B
@@ -51,23 +52,30 @@ IF '%ERRORLEVEL%' NEQ '0' (
     COLOR 0A
     MODE CON COLS=70 LINES=2
     PUSHD "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-    DEL "Volume and Brightness Control.exe"
-    POPD
-    COPY "Licenses\res\Vol*Bri*.exe" "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp" /-Y
-    COLOR 0A
-    MODE CON COLS=54 LINES=3
-    CLS
-    ECHO.
-    ECHO                     Installing . . .
-    TITLE Volume and Brightness Control v0.3 Installer
-    COLOR 0A
-    CLS
-    ECHO.
-    ECHO                         DONE!
-    MSG * Volume and Brightness Control v0.3 Installation complete!
-    CD "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\"
-    START "" /b "Volume and Brightness Control v0.3.exe"
-    ::@RD /S /Q "..\Volume and Brightness Control v0.3"
+    DEL "Vol*Bri*.exe" /S /Q
+    FOR /F %%F in ("Vol*Bri*.exe") DO (
+    	IF EXIST "Vol*Bri*.exe" (
+    		POPD
+    		MSG * [ ERROR ] : Cannot delete old versions, still running in background. Please exit running programs from System Tray and try again.
+			EXIT /B
+		) ELSE (
+    		POPD
+    		COPY "Licenses\res\Vol*Bri*.exe" "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp" /A
+    		COLOR 0A
+    		MODE CON COLS=54 LINES=3
+    		CLS
+    		ECHO.
+    		ECHO                     Installing . . .
+    		TITLE Volume and Brightness Control v0.4 Installer
+    		COLOR 0A
+    		CLS
+    		ECHO.
+    		ECHO                         DONE!
+    		MSG * Volume and Brightness Control v0.4 Installation complete!
+    		PUSHD "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
+    		START "" /b "Volume and Brightness Control v0.4.exe"
+    	)
+    )
 
 
 ::  Rellik Jaeger

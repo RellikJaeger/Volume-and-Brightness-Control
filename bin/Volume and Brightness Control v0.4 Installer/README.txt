@@ -1,5 +1,5 @@
 
-Volume and Brightness Control v0.3 Copyright © 2020, Rellik Jaeger
+Volume and Brightness Control v0.4 Copyright © 2020, Rellik Jaeger
 
 [!] NOTICE:
     The main program (or main software of this program)
@@ -14,7 +14,7 @@ Volume and Brightness Control v0.3 Copyright © 2020, Rellik Jaeger
 [!] INSTALLATION:
     [*] If you have the previous version of "Volume and Brightness
         Control" software, please EXIT before running this current
-        version (Volume and Brightness Control v0.3) of
+        version (Volume and Brightness Control v0.4) of
         "Installer.bat". (NO NEED TO DELETE ANYTHING BY YOURSELF)
 
     [*] If you FORGOT to EXIT the running program and installed this
@@ -34,6 +34,7 @@ Keyboard Shortcut Keys:
     Win  + Alt + Up Arrow          = Volume Increase (+2)
     Win  + Alt + Down Arrow        = Volume Decrease (-2)
     Win  + Alt + M                 = Volume Mute (-)
+    Win  + Alt + N                 = Toggle Night Light (On/Off)
     Ctrl + Win + Alt + Right Arrow = Gamma Increase (+5)
     Ctrl + Win + Alt + Left Arrow  = Gamma Decrease (-5)
     Ctrl + Win + Alt + R           = Gamma Restore Default (128)

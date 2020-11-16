@@ -1,12 +1,11 @@
 
     CHANGELOG FOR VERSION UPDATE
 
-    Volume and Brightness Control v0.3 Copyright © 2020, Rellik Jaeger
+    Volume and Brightness Control v0.4 Copyright © 2020, Rellik Jaeger
 
     Changes:
-        - Shortcut key changes. (See more details in README.txt)
-        - New brightness functions added. (See more details in README.txt)
-        - Some internal coding logic may differ from previous versions.
+        - New Toggle Night Light Auto Click Function Added.
+          (See more details in README.txt)
 
     [!] NOTICE:
         The main program (or main software of this program)

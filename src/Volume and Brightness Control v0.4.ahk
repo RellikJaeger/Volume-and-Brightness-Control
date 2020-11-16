@@ -206,6 +206,22 @@ class BrightnessSetter {
 		return &GUID_ACDC_POWER_SOURCE_
 	}
 
+	ToggleNightLight() {
+		;run ms-settings:nightlight
+		;WinWait Settings
+		;Sleep 400
+		;Send %A_Tab%
+		;Send %A_Tab%
+		;Send {Enter}
+		;WinClose, Settings
+
+		MouseGetPos,x,y
+    	Send #a
+    	Sleep 700
+    	Click, 250, 750
+    	MouseMove, %x%, %y%
+    	Send #a
+	}
 }
 
 BrightnessSetter_new() {
@@ -221,14 +237,15 @@ BS := new BrightnessSetter()
 
 ;---------------------------------------------------------[Keyboard]-----------------------------------------------------------------------
 
-#!Right::BS.SetBrightness(5)                                            ; Win  + Alt + Right Arrow       = Brightness Increase (+5)
-#!Left::BS.SetBrightness(-5)                                            ; Win  + Alt + Left Arrow        = Brightness Decrease (-5)
-#!Up:: Send, {Volume_up}                                                ; Win  + Alt + Up Arrow          = Volume Increase (+2)
-#!Down:: Send, {Volume_down}                                            ; Win  + Alt + Down Arrow        = Volume Decrease (-2)
-#!m:: Send, {Volume_Mute}                                               ; Win  + Alt + M                 = Volume Mute (-)
+!#Right::BS.SetBrightness(5)                                            ; Win  + Alt + Right Arrow       = Brightness Increase (+5)
+!#Left::BS.SetBrightness(-5)                                            ; Win  + Alt + Left Arrow        = Brightness Decrease (-5)
+!#Up:: Send, {Volume_up}                                                ; Win  + Alt + Up Arrow          = Volume Increase (+2)
+!#Down:: Send, {Volume_down}                                            ; Win  + Alt + Down Arrow        = Volume Decrease (-2)
+!#m:: Send, {Volume_Mute}                                               ; Win  + Alt + M                 = Volume Mute (-)
 ^#!Right:: adj_brightness(+5)                                           ; Ctrl + Win + Alt + Right Arrow = Gamma Increase (+5)
 ^#!Left:: adj_brightness(-5)                                            ; Ctrl + Win + Alt + Left Arrow  = Gamma Decrease (-5)
 ^#!r:: restore_Brightness()                                             ; Ctrl + Win + Alt + R           = Gamma Restore Default (128)
+!#n::BS.ToggleNightLight()
 
 ;---------------------------------------------[Special Shortcut Only For Keyboard]---------------------------------------------------------
 
@@ -251,11 +268,11 @@ LButton & MButton:: restore_Brightness()  ; Hold Left  & Click Wheel = Gamma Res
 
 ;-----------------------------------------------------[Keyboard + Mouse]-------------------------------------------------------------------
 
-#RButton::BS.SetBrightness(5)     ; Win + Mouse Right                   = Brightness Increase (+5)
-#LButton::BS.SetBrightness(-5)    ; Win + Mouse Left                    = Brightness Decrease (-5)
-#WheelUp:: Send, {Volume_up}      ; Win + Mouse Wheel Up                = Volume Increase (+2)
-#WheelDown:: Send, {Volume_down}  ; Win + Mouse Wheel Down              = Volume Decrease (-2)
-#MButton:: Send, {Volume_Mute}    ; Win + Mouse Wheel                   = Volume Mute (-)
+!#RButton::BS.SetBrightness(5)     ; Win + Mouse Right                   = Brightness Increase (+5)
+!#LButton::BS.SetBrightness(-5)    ; Win + Mouse Left                    = Brightness Decrease (-5)
+!#WheelUp:: Send, {Volume_up}      ; Win + Mouse Wheel Up                = Volume Increase (+2)
+!#WheelDown:: Send, {Volume_down}  ; Win + Mouse Wheel Down              = Volume Decrease (-2)
+!#MButton:: Send, {Volume_Mute}    ; Win + Mouse Wheel                   = Volume Mute (-)
 ^#!WheelUp:: adj_brightness(+5)   ; Ctrl + Win + Alt + Mouse Wheel Up   = Gamma Increase (+5)
 ^#!WheelDown:: adj_brightness(-5) ; Ctrl + Win + Alt + Mouse Wheel Down = Gamma Decrease (-5)
 ^#!MButton:: restore_Brightness() ; Ctrl + Win + Alt + Mouse Wheel      = Gamma Restore Default (128)
