@@ -21,7 +21,7 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 @ECHO OFF
-TITLE Volume and Brightness Control v0.4 Installer
+TITLE Volume and Brightness Control v0.4.1 Installer
 COLOR 0A
 MODE CON COLS=54 LINES=3
 IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
@@ -66,14 +66,14 @@ IF '%ERRORLEVEL%' NEQ '0' (
     		CLS
     		ECHO.
     		ECHO                     Installing . . .
-    		TITLE Volume and Brightness Control v0.4 Installer
+    		TITLE Volume and Brightness Control v0.4.1 Installer
     		COLOR 0A
     		CLS
     		ECHO.
     		ECHO                         DONE!
-    		MSG * Volume and Brightness Control v0.4 Installation complete!
+    		MSG * Volume and Brightness Control v0.4.1 Installation complete!
     		PUSHD "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-    		START "" /b "Volume and Brightness Control v0.4.exe"
+    		START "" /b "Volume and Brightness Control v0.4.1.exe"
     	)
     )
 

@@ -1,11 +1,12 @@
 
     CHANGELOG FOR VERSION UPDATE
 
-    Volume and Brightness Control v0.4 Copyright © 2020, Rellik Jaeger
+    Volume and Brightness Control v0.4.1 Copyright © 2020, Rellik Jaeger
 
     Changes:
         - New Toggle Night Light Auto Click Function Added.
           (See more details in README.txt)
+        - Night Light Screen Hack Cursor Y axis position a little up.
 
     [!] NOTICE:
         The main program (or main software of this program)

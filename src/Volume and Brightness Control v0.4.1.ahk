@@ -218,7 +218,7 @@ class BrightnessSetter {
 		MouseGetPos,x,y
     	Send #a
     	Sleep 700
-    	Click, 250, 750
+    	Click, 250, 710
     	MouseMove, %x%, %y%
     	Send #a
 	}

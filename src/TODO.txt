@@ -1,0 +1,5 @@
+
+NEW Features
+
+1) Win + Alt + Shift - Super Alternate Shift/Hyper Alternate Shift
+	Calling a dialog box or small custom command prompt to make custom commands and special shortcuts.
