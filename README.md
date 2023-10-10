@@ -1,17 +1,17 @@
+# Volume and Brightness Control (Windows)
 
-Volume and Brightness Control v0.4.1 Copyright © 2020, Rellik Jaeger
+### DISCLAIMER
 
-[!] NOTICE:
-The main program (or main software of this program)
-is developed by using AutoHotKey Script and Compiler!
-I do not own any single code of this program!
-Credit to the owners of all sources :)
+Volume and Brightness Control is developed using an AutoHotKey script and compiler.  
+I do not own any of the code in this program.  
+Credit goes to the owners of all the sources :)
 
-Learn more about AutoHotKey on official website
-	- https://www.autohotkey.com/
+Learn more about AutoHotKey on the official website - https://www.autohotkey.com
 
+<br>
 
-[!] INSTALLATION:
+### INSTALLATION
+</pre>
 If you have the previous version of "Volume and Brightness Control"
  software, please EXIT before running this current version (Volume 
  and Brightness Control v0.4.1) of "Installer.bat". 
@@ -23,9 +23,12 @@ version, no need to worry.
 Just stop running programs and reinstall this version.
 
 If you are clean installing, just run "Installer.bat" and DONE!
+</pre>
 
+<br>
 
-HOW TO USE:
+### HOW TO USE
+<pre>
 Keyboard Shortcut Keys:
     Win  + Alt + Right Arrow       = Brightness Increase (+5)
     Win  + Alt + Left Arrow        = Brightness Decrease (-5)
@@ -61,25 +64,17 @@ Keyboard + Mouse Shortcut Keys:
     Ctrl + Win + Alt + Mouse Wheel Up   = Gamma Increase (+5)
     Ctrl + Win + Alt + Mouse Wheel Down = Gamma Decrease (-5)
     Ctrl + Win + Alt + Mouse Wheel      = Gamma Restore Default (128)
+</pre>
 
-UNINSTALLATION:
-    Manual Method:
-        Press Win + R and type "shell:common startup" without quotes
-        into "Run" dialog box and press Enter button.
-        Find the "Volume and Brightness Control" application in that
-        folder and delete it.
+### UNINSTALLATION
+<pre>
+Manual Method:
+	Press Win + R and type "shell:common startup" without quotes
+	into "Run" dialog box and press Enter button.
+	Find the "Volume and Brightness Control" application in that
+	folder and delete it.
 
 Uninstaller Method:
-    Coming Soon...
+	Coming Soon...
+</pre>
 
-
-CONTACT ME:
-    Instagram: https://instagram.com/RellikJaeger
-    Facebook: https://facebook.com/RellikJaeger
-    Twitter: https://twitter.com/RellikJaeger
-    Reddit: https://reddit.com/u/RellikJaeger
-    GitHub: https://github.com/RellikJaeger
-    Gmail: rellikjaeger@gmail.com
-
-
-  Rellik Jaeger
